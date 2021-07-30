@@ -1,0 +1,22 @@
+{
+  "name": "irc-taask",
+  "version": "1.0.0",
+  "description": "model website with database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DA5Hx/model-website.git"
+  },
+  "author": "Tanishq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DA5Hx/model-website/issues"
+  },
+  "homepage": "https://github.com/DA5Hx/model-website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
