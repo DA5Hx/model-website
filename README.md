@@ -10,7 +10,7 @@ to use them correctly in the near future.
 Also I have used node.js as the backend server environment as I have learnt this 
 and not django.
 
-#How to open the website:
+## How to open the website:
 
 Since the website is hosted on a local server so to open it,
 just clone the repo onto your desktop
