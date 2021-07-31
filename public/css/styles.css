@@ -1,0 +1,140 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Miriam Libre', sans-serif;
+        background: url("../images/body.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(10px);
+    }
+    
+    a,
+    a:link,
+    a:visited {
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .continents li {
+        min-width: 16.667%;
+        border-radius: 5%;
+        font-size: 1rem;
+        padding: 1em;
+        background-color: #007bff;
+        transition: ease-in-out .3s;
+    }
+    
+    .continents li:hover {
+        background-color: #0062cc;
+    }
+    
+    .head {
+        display: flex;
+        background-color: #202b3b;
+        justify-content: space-between;
+    }
+    
+    img {
+        padding: .3em;
+        margin-left: 4em;
+    }
+    
+    .nav {
+        color: #717f92;
+        transition: ease-in-out .3s;
+    }
+    
+    .nav:hover {
+        color: #eceaec;
+    }
+    
+    .navbar {
+        margin-right: 4em;
+        min-width: 28%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .continents {
+        margin: 1.5em 3em 1em;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+    
+    .continent {
+        color: #fff;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 1em;
+    }
+    
+    .card {
+        min-width: 30%;
+        margin: 0 0 2.9em;
+        text-align: center;
+        background-color: #f0f0f0fa;
+        border: 2px solid black;
+        border-radius: 2%;
+    }
+    
+    .apply {
+        width: 100%;
+        font-size: 1rem;
+        padding: .9em;
+        background-color: #ddddddc0;
+        color: #4ba0fc;
+        border: 0;
+        transition: ease-in-out .3s;
+        border-top: 1px solid rgb(177, 177, 177);
+    }
+    
+    .apply:hover {
+        color: #fff;
+        background-color: #4ba0fc;
+    }
+    
+    .floating {
+        position: absolute;
+        transform: translate(-0.5vw, -150px);
+        font-size: 1.5rem;
+        padding: .1em .5em;
+        border-radius: 2%;
+        cursor: pointer;
+        border: 2px solid #f44336;
+        transition: ease-in-out .3s;
+        color: #f44336;
+    }
+    
+    .floating:hover {
+        background: #f44336;
+        color: white;
+    }
+    
+    h3,
+    h4,
+    p {
+        padding: .68em;
+    }
+    
+    h3,
+    h4 {
+        color: #7a84a7;
+    }
+    
+    .deadline {
+        color: #ff7575;
+    }

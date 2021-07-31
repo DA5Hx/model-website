@@ -5,11 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap" rel="stylesheet">
     <title>model-website</title>
 </head>
 
 <body>
-    <h1>hello</h1>
+    <div class="image"></div>
+    <div class="head">
+        <img src="images/logo.png" alt="logo">
+        <div class="navbar">
+            <li><a class="nav" href="#">Universities</a></li>
+            <li><a class="nav" href="#">My Applications</a></li>
+            <li><a class="nav" href="#">Edit Profile</a></li>
+            <li><a class="nav" href="#">Logout</a></li>
+        </div>
+    </div>
+    <div class="mid">
+        <div class="continents">
+            <li><a class="continent" href="#">All</a></li>
+            <li><a class="continent" href="#">North America</a></li>
+            <li><a class="continent" href="#">South America</a></li>
+            <li><a class="continent" href="#">Asia</a></li>
+            <li><a class="continent" href="#">Europe</a></li>
+            <li><a class="continent" href="#">Australia</a></li>
+        </div>
+        <div class="container">
+            <% for(var i=0 ;i<c;i++) { %>
+                <div class="card">
+                    <h3>
+                        <%=array[i].university%>
+                    </h3>
+                    <h4>
+                        <%=array[i].country%>
+                    </h4>
+                    <p>
+                        Expense:
+                        <%=array[i].expense%>
+                    </p>
+                    <p class="deadline">
+                        Deadline:
+                        <%=array[i].deadline%>
+                    </p>
+                    <button type="submit" class="apply">Apply</button>
+                </div>
+                <% } %>
+
+        </div>
+    </div>
+    <form action="/" method="POST">
+        <button type="submit" class="floating" name="addcard">Add Card</button>
+    </form>
 </body>
 
 </html>
